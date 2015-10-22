@@ -1,3 +1,5 @@
-*
+/*
 !/.gitignore
+!/apps
+/apps/*
 !/apps/centrilnas-extra-https.conf
