@@ -19,3 +19,12 @@
 !/etc/apache2/sites-available
 /etc/apache2/sites-available/*
 !/etc/apache2/sites-available/fv-https
+
+!/home
+/home/*
+!/home/centril
+/home/centril/*
+!/home/centril/.bashrc
+
+!/home/centril/.weechat
+/home/centril/.weechat/sec.conf
