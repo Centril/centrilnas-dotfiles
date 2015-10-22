@@ -11,6 +11,8 @@
 
 !/etc
 /etc/*
+!/etc/profile
+
 !/etc/apache2
 /etc/apache2/*
 !/etc/apache2/sites-available
