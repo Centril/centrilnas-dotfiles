@@ -12,6 +12,7 @@
 !/etc
 /etc/*
 !/etc/profile
+!/etc/bash.bashrc
 
 !/etc/apache2
 /etc/apache2/*
