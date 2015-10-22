@@ -8,3 +8,11 @@
 !/opt
 /opt/*
 !/opt/centrilnas
+
+!/etc
+/etc/*
+!/etc/apache2
+/etc/apache2/*
+!/etc/apache2/sites-available
+/etc/apache2/sites-available/*
+!/etc/apache2/sites-available/fv-https

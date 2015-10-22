@@ -1,0 +1,12 @@
+<IfModule mod_ssl.c>
+<VirtualHost _default_:443>
+	Include "/etc/frontview/apache/ssl.conf"
+	Include "/etc/frontview/apache/defaults.conf"
+	Include "/etc/frontview/apache/http-share-redirect.conf"
+	Include "/etc/frontview/apache/fv-admin.conf"
+	Include "/etc/frontview/apache/Shares.conf"
+	Include "/etc/frontview/apache/apps-https.conf"
+	Include "/etc/frontview/apache/READYDROP.conf"
+	Include "/apps/centrilnas-extra-https.conf"
+</VirtualHost>
+</IfModule>
