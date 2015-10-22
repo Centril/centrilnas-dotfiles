@@ -53,3 +53,36 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 		fi
 	}
 fi
+
+# set a fancy prompt (non-color, overwrite the one in /etc/profile)
+col() {
+	echo "\[\e[1;$1m\]$2\[\e[0m\]"
+}
+set_prompt() {
+	Last_Command=$? # Must come first!
+	FancyX='\342\234\227'
+	Checkmark='\342\234\223'
+
+	PS1=""
+	# If it was successful, print a green check mark. Otherwise, print
+	# a red X.
+	if [[ $Last_Command == 0 ]]; then
+		PS1+="$(col 42 " $Checkmark ")"
+	else
+		PS1+="$(col 41 " $FancyX ")"
+	fi
+
+	PS1+=" ${debian_chroot:+($debian_chroot)}"
+
+	# Show red if root:
+	if [[ $EUID == 0 ]]; then
+		PS1+="$(col 41 ' \u')"
+	else
+		PS1+="$(col 43 ' \u')"
+	fi
+
+	PS1+="$(col 46)$(col 47 @)$(col 46 '\H ') $(col 44 ' \w ') $(col 37 '\$') "
+	PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1\[\e[1;37m\]"
+}
+PROMPT_COMMAND='set_prompt'
+trap 'echo -ne "\e[0m"' DEBUG
