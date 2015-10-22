@@ -13,6 +13,8 @@
 /etc/*
 !/etc/profile
 !/etc/bash.bashrc
+!/etc/screenrc
+!/etc/tmux.conf
 
 !/etc/apache2
 /etc/apache2/*
