@@ -27,4 +27,6 @@
 !/home/centril/.bashrc
 
 !/home/centril/.weechat
+/home/centril/**/*.log
+/home/centril/.weechat/logs
 /home/centril/.weechat/sec.conf
