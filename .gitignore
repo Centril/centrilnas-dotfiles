@@ -16,6 +16,14 @@
 !/etc/screenrc
 !/etc/tmux.conf
 
+!/etc/ssh
+/etc/ssh/*
+!/etc/ssh/sshd_config
+
+!/etc/sshguard
+/etc/sshguard/*
+!/etc/sshguard/whitelist
+
 !/etc/apache2
 /etc/apache2/*
 !/etc/apache2/sites-available
