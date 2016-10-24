@@ -4,3 +4,5 @@
 # Address blocks in CIDR notation
 127.0.0.0/8
 
+# centril, 2016-09-07: whitelist all LAN.
+192.168.0.0/24
