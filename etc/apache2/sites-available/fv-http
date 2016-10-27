@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+	Include "/etc/frontview/apache/defaults.conf"
+	Include "/etc/frontview/apache/http-share-redirect.conf"
+	Include "/etc/frontview/apache/http-redirect.conf"
+	Include "/etc/frontview/apache/Shares.conf"
+	Include "/etc/frontview/apache/apps-https.conf"
+	Include "/etc/frontview/apache/READYDROP.conf"
+	Include "/etc/frontview/apache/lan-try.conf"
+	Include "/apps/centrilnas-extra-http.conf"
+</VirtualHost>

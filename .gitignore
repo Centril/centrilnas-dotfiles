@@ -4,6 +4,7 @@
 !/apps
 /apps/*
 !/apps/centrilnas-extra-https.conf
+!/apps/centrilnas-extra-http.conf
 
 !/opt
 /opt/*
@@ -29,6 +30,7 @@
 !/etc/apache2/sites-available
 /etc/apache2/sites-available/*
 !/etc/apache2/sites-available/fv-https
+!/etc/apache2/sites-available/fv-http
 
 !/home
 /home/*
